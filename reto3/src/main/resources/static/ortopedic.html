@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>Producto</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <base href="/"/>
+        <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="/js/ortopedic.js"></script>
+    </head>
+    <body>
+        <h1>Productos Ortopedicos</h1>
+        <div class="container">
+
+<h1> Ortopedic</h1>
+        <div id="resultado2"></div>
+        <button onclick="traerInformacionOrtopedic()" > Consultar Ortopedic</button>
+    
+        <div>
+        <input type="text" id="Obrand" placeholder="brand" maxlength="45" required>
+        <input type="number" id="Oyear" placeholder="year" max="2021" required>
+        <input type="text" id="Oname" placeholder="name" maxlength="45" required>    
+        <input type="text" id="Odescription" placeholder="description" maxlength="250" required>   
+        
+        <select placeholder="Seleccionar" id="select-category">
+            <option>Seleccionar Categoria</option>
+          </select><br>
+        </div>
+        <button onclick="guardarInformacionOrtopedic()">Guardar Ortopedic</button>
+        <script type="text/javascript">
+        window.onload = autoInicioCategoria();
+        </script>
+        <br/><br/><br/>
+        <a href="index.html">Ir al Inicio</a>
+        </div>
+
+    </body>
+
+</html>
+

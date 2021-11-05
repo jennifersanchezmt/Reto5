@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>Demo Login</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <base href="/"/>
+        <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="/js/cliente.js"></script>
+    </head>    
+    <body>       
+        <div class="container">
+                <h1> Clientes</h1>
+        <div id="resultado3"></div>
+        <button onclick="traerInformacionClientes()" > Consultar Clientes</button>    
+        <div>
+        <input type="text" id="CLname" placeholder="name" maxlength="250" required>
+        <input type="email" id="CLemail" placeholder="email"  maxlength="45" required>
+        <input type="password" id="CLpassword" placeholder="password"  maxlength="45" required>
+        <input type="number" id="CLage" placeholder="age" max="100" required>  
+        </div>
+    <button onclick="guardarInformacionClientes()">Guardar Clientes</button>
+        <br/><br/><br/>
+        <a href="index.html">Ir al Inicio</a>
+        </div>
+    </body>
+</html>

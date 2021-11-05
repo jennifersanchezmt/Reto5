@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>Demo Login</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <base href="/"/>
+        <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+        <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="/js/reservacion.js"></script>
+    </head>    
+    <body>       
+        <div class="container">
+           <h1> Reservaciones</h1>
+            <div id="resultado5"></div>
+            <button onclick="traerInformacionReservaciones()" > Consultar Reservaciones</button>
+        <div>
+        <select placeholder="SeleccionarCL" id="select-client2">
+            <option>Seleccionar Cliente</option>
+        </select><br>
+        <select placeholder="SeleccionarOR" id="select-ortopedic2">
+            <option>Seleccionar Ortopedic</option>
+        </select><br>
+        </div>
+        <div>
+        <input type="date" id="RstartDate" placeholder="startDate">
+        <input type="date" id="RdevolutionDate" placeholder="devolutionDate">
+        <input type="Text" id="RStatus" placeholder="Status" disabled value="created">
+  
+        </div>
+        <button onclick="guardarInformacionReservaciones()">Guardar Reservaciones</button>
+        <script type="text/javascript">
+        window.onload = autoInicioClienteR();
+        </script>
+        <script type="text/javascript">
+        window.onload = autoInicioOrtopedicR();
+        </script> 
+        <br/><br/><br/>
+        <a href="index.html">Ir al Inicio</a>   
+        </div>
+    </body>
+</html>
